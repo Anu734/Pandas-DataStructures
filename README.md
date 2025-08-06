@@ -3,7 +3,7 @@ What is a Series? A Pandas Series is like a column in a table.  It is a one-dime
 provides two main data structures:
 Series – 1D labeled array
 DataFrame – 2D labeled table (like Excel)
-What is a Series?
+### What is a Series?
 A Pandas Series is like a column in a table.
 It is a one-dimensional array holding data of any type.
   # FEW EXAMPLES OF PANDAS SERIES  
@@ -19,3 +19,20 @@ data = [10, 20, 30]
 s = pd.Series(data)
 print(s)
 
+## 2. DATAFRAME 
+ ### WNHAT  IS DATAFRAME ?
+Data sets in Pandas are usually multi-dimensional tables, called DataFrames.
+Series is like a column, a DataFrame is the whole table.
+## CREATING DATAFRAME;
+import pandas as pd
+df = pd.DataFrame()
+print(df)
+## VARIOUS TASK  TO 
+ ### Task	Code
+Check null values:    	df.isnull().sum()
+Replace values :       	df['col'].replace(old, new)
+Drop rows/columns:	      df.drop(index=0) or df.drop(columns='col')
+Reset index	:            df.reset_index(drop=True)
+Set index :            	df.set_index('column')
+##  Grouping Data
+df.groupby('City')['Age'].mean()
