@@ -36,3 +36,24 @@ Reset index	:            df.reset_index(drop=True)
 Set index :            	df.set_index('column')
 ##  Grouping Data
 df.groupby('City')['Age'].mean()
+## Example - 1
+# Create a simple Pandas DataFrame:
+
+import pandas as pd
+
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+## Example - 2
+#load data into a DataFrame object:
+df = pd.DataFrame(data)
+
+print(df) 
+Pandas use the loc attribute to return one or more specified row(s)
+
+Example
+Return row 0:
+
+#refer to the row index:
+print(df.loc[0])
